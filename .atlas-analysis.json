@@ -1,0 +1,146 @@
+{
+  "projectType": "infrastructure",
+  "projectName": "NATS Server",
+  "projectDescription": "High-performance messaging server for cloud and edge native systems",
+  "theme": "aspen",
+  "primaryColor": "#3ab1e3",
+  "lightColor": "#579a74",
+  "darkColor": "#d8e9dd",
+  "navigation": {
+    "tabs": [
+      {
+        "tab": "Documentation",
+        "groups": [
+          {
+            "group": "Getting Started",
+            "pages": [
+              "introduction",
+              "quickstart",
+              "installation"
+            ]
+          },
+          {
+            "group": "Core Concepts",
+            "pages": [
+              "concepts/overview",
+              "concepts/messaging-patterns",
+              "concepts/subjects",
+              "concepts/accounts"
+            ]
+          },
+          {
+            "group": "Configuration",
+            "pages": [
+              "configuration/overview",
+              "configuration/server-options",
+              "configuration/authentication",
+              "configuration/authorization",
+              "configuration/tls",
+              "configuration/clustering",
+              "configuration/gateway",
+              "configuration/leafnodes"
+            ]
+          },
+          {
+            "group": "JetStream",
+            "pages": [
+              "jetstream/overview",
+              "jetstream/streams",
+              "jetstream/consumers",
+              "jetstream/configuration",
+              "jetstream/clustering"
+            ]
+          },
+          {
+            "group": "Deployment",
+            "pages": [
+              "deployment/docker",
+              "deployment/kubernetes",
+              "deployment/clustering-setup",
+              "deployment/super-cluster"
+            ]
+          },
+          {
+            "group": "Operations",
+            "pages": [
+              "operations/monitoring",
+              "operations/logging",
+              "operations/signals",
+              "operations/reload",
+              "operations/performance"
+            ]
+          },
+          {
+            "group": "Advanced Features",
+            "pages": [
+              "advanced/mqtt",
+              "advanced/websockets",
+              "advanced/message-tracing",
+              "advanced/ocsp"
+            ]
+          }
+        ]
+      },
+      {
+        "tab": "Reference",
+        "groups": [
+          {
+            "group": "CLI Reference",
+            "pages": [
+              "reference/cli/server-options",
+              "reference/cli/logging-options",
+              "reference/cli/jetstream-options",
+              "reference/cli/cluster-options"
+            ]
+          },
+          {
+            "group": "Configuration Reference",
+            "pages": [
+              "reference/config/server",
+              "reference/config/jetstream",
+              "reference/config/auth",
+              "reference/config/cluster",
+              "reference/config/gateway",
+              "reference/config/leafnode"
+            ]
+          },
+          {
+            "group": "Monitoring API",
+            "pages": [
+              "reference/monitoring/endpoints",
+              "reference/monitoring/varz",
+              "reference/monitoring/connz",
+              "reference/monitoring/routez",
+              "reference/monitoring/subsz",
+              "reference/monitoring/jsz"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "keyFeatures": [
+    "JetStream persistence and streaming",
+    "Clustering and super-clustering for high availability",
+    "Multi-tenancy with account-based security",
+    "MQTT protocol support for IoT workloads",
+    "WebSocket connectivity",
+    "JWT and NKeys authentication",
+    "Leaf node architecture for edge computing",
+    "Gateway federation for global connectivity",
+    "Built-in monitoring and observability",
+    "Message tracing for debugging"
+  ],
+  "publicApiSurface": [
+    "Server.NewServer() - Create new server instance",
+    "Server.Run() - Start server",
+    "Server.Shutdown() - Gracefully shutdown server",
+    "ConfigureOptions() - Parse configuration from file or flags",
+    "JetStream streams and consumers API",
+    "Monitoring endpoints: /varz, /connz, /routez, /subsz, /jsz",
+    "Signal handling: reload, reopen, ldm, stop",
+    "Authentication: user/pass, tokens, JWT, NKeys",
+    "TLS configuration and OCSP stapling",
+    "Clustering routes and gateway connections"
+  ]
+}
